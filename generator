@@ -1,0 +1,40 @@
+#!/bin/bash
+
+set -x
+
+for IMAGE in $LIST_IMAGES
+do
+	OS_NAME=$(echo $IMAGE | cut -d";" -f1)
+	OS_VERSION=$(echo $IMAGE | cut -d";" -f2)
+	IMAGE_URL=$(echo $IMAGE | cut -d";" -f3)
+	URL_LIST=($(echo "$IMAGE_URL" | tr "/" " "))
+	FILE_NAME="${URL_LIST[${#URL_LIST[@]}-1]}"
+	NAME_IMAGE="$OS_NAME-container-disk"
+	IMAGE_NAME=$(echo $FILE_NAME | cut -d"." -f1)
+	IMAGE_EXTENSION=$(echo $FILE_NAME | cut -d"." -f2)
+
+	echo "OS:$OS_NAME VERSION:$OS_VERSION IMAGE:$IMAGE_URL"
+
+	#if [ ! -f custom/$FILE_NAME ]; then
+    #	curl -g -L $IMAGE_URL > custom/$FILE_NAME
+	#fi
+
+	docker build -f base/Dockerfile -t $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION \
+		--build-arg OS_NAME="$OS_NAME" \
+		--build-arg OS_VERSION="$OS_VERSION" \
+		--build-arg IMAGE_URL="$IMAGE_URL" \
+		--build-arg FILE_NAME="$FILE_NAME" \
+		--build-arg IMAGE_NAME="$IMAGE_NAME" \
+		--build-arg IMAGE_EXTENSION="$IMAGE_EXTENSION" .
+
+	docker push $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION
+
+	#rm -f custom/$FILE_NAME
+	docker rmi $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION
+done
+
+echo "Clean..."
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images | grep "^<none>" | awk '{ print $3 }')
+docker rmi $(docker images | grep "<none>" | grep "$NAME_IMAGE" | awk '{ print $3 }')

@@ -1,0 +1,5 @@
+#cloud-config
+chpasswd:
+  list: |
+    root:toor
+  expire: False
