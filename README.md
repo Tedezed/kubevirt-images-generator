@@ -2,23 +2,23 @@
 
 ## Debian
 
-- [debian-container-disk:9.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/debian-container-disk)
-- [debian-container-disk:8.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/debian-container-disk)
-- [debian-container-disk:testing](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/debian-container-disk)
+- [debian-container-disk:9.0](https://hub.docker.com/r/tedezed/tedezed/debian-container-disk)
+- [debian-container-disk:8.0](https://hub.docker.com/r/tedezed/tedezed/debian-container-disk)
+- [debian-container-disk:testing](https://hub.docker.com/r/tedezed/tedezed/debian-container-disk)
 
 ## Ubuntu
 
-- [ubuntu-container-disk:18.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/ubuntu-container-disk)
-- [ubuntu-container-disk:16.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/ubuntu-container-disk)
-- [ubuntu-container-disk:14.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/ubuntu-container-disk)
+- [ubuntu-container-disk:18.0](https://hub.docker.com/r/tedezed/tedezed/ubuntu-container-disk)
+- [ubuntu-container-disk:16.0](https://hub.docker.com/r/tedezed/tedezed/ubuntu-container-disk)
+- [ubuntu-container-disk:14.0](https://hub.docker.com/r/tedezed/tedezed/ubuntu-container-disk)
 
 ## OpenSUSE
 
-- [opensuse-container-disk:15.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/opensuse-container-disk)
+- [opensuse-container-disk:15.0](https://hub.docker.com/r/tedezed/tedezed/opensuse-container-disk)
 
 ## CentOS
 
-- [centos-container-disk:7.0](https://cloud.docker.com/u/tedezed/repository/docker/tedezed/centos-container-disk)
+- [centos-container-disk:7.0](https://hub.docker.com/r/tedezed/tedezed/centos-container-disk)
 
 ## Example Kubevirt
 
