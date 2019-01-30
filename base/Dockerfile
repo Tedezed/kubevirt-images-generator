@@ -14,8 +14,7 @@ RUN echo "Download: $IMAGE_URL FILE: $FILE_NAME" \
 	&& yum install -y findutils \
 	&& curl -SL $IMAGE_URL -o /disk/$FILE_NAME
 
-RUN yum install -y findutils; \
-KEY_LOOP="true"; \
+RUN KEY_LOOP="true"; \
 while [ $KEY_LOOP == "true" ]; do \
 	echo "Process extension: $IMAGE_EXTENSION"; \
 	if [ "$IMAGE_EXTENSION" == "qcow2" ] ; then \

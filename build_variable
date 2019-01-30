@@ -8,4 +8,8 @@ export LIST_IMAGES="ubuntu;18.0;https://cloud-images.ubuntu.com/bionic/current/b
 	debian;testing;https://cdimage.debian.org/cdimage/openstack/testing/debian-testing-openstack-amd64.qcow2 \
 	opensuse;15.0;https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.0/images/openSUSE-Leap-15.0-OpenStack.x86_64-0.0.4-Buildlp150.12.96.qcow2 \
 	centos;7.0;https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1503.qcow2 \
-	coreos;1967.4.0;https://stable.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2"
+	coreos;1967.4.0;https://stable.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2 \
+	cirros;0.4.0;http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img \
+	fedora;29;https://ftp.cica.es/fedora/linux/releases/29/Cloud/x86_64/images/Fedora-Cloud-Base-29-1.2.x86_64.qcow2 \
+	fedora;28;https://ftp.cica.es/fedora/linux/releases/28/Cloud/x86_64/images/Fedora-Cloud-Base-28-1.1.x86_64.qcow2 \
+	fedora;27;https://download.fedoraproject.org/pub/fedora/linux/releases/27/CloudImages/x86_64/images/Fedora-Cloud-Base-27-1.6.x86_64.qcow2"
