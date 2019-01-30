@@ -17,7 +17,7 @@ do
 	echo "OS:$OS_NAME VERSION:$OS_VERSION IMAGE:$IMAGE_URL"
 
 	#if [ ! -f custom/$FILE_NAME ]; then
-    #	curl -g -L $IMAGE_URL > custom/$FILE_NAME
+	#	curl -g -L $IMAGE_URL > custom/$FILE_NAME
 	#fi
 
 	docker build -f base/Dockerfile -t $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION \
