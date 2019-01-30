@@ -12,6 +12,10 @@
 - [ubuntu-container-disk:16.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
 - [ubuntu-container-disk:14.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
 
+## CoreOS
+
+- [coreos-container-disk:1967.4.0](https://hub.docker.com/r/tedezed/coreos-container-disk)
+
 ## OpenSUSE
 
 - [opensuse-container-disk:15.0](https://hub.docker.com/r/tedezed/opensuse-container-disk)

@@ -10,8 +10,9 @@ do
 	URL_LIST=($(echo "$IMAGE_URL" | tr "/" " "))
 	FILE_NAME="${URL_LIST[${#URL_LIST[@]}-1]}"
 	NAME_IMAGE="$OS_NAME-container-disk"
+	FILE_LIST=($(echo "$FILE_NAME" | tr "." " "))
 	IMAGE_NAME=$(echo $FILE_NAME | cut -d"." -f1)
-	IMAGE_EXTENSION=$(echo $FILE_NAME | cut -d"." -f2)
+	IMAGE_EXTENSION="${FILE_LIST[${#FILE_LIST[@]}-1]}"
 
 	echo "OS:$OS_NAME VERSION:$OS_VERSION IMAGE:$IMAGE_URL"
 

@@ -7,4 +7,5 @@ export LIST_IMAGES="ubuntu;18.0;https://cloud-images.ubuntu.com/bionic/current/b
 	debian;8.0;https://cdimage.debian.org/cdimage/openstack/archive/8.11.0/debian-8.11.0-openstack-amd64.qcow2 \
 	debian;testing;https://cdimage.debian.org/cdimage/openstack/testing/debian-testing-openstack-amd64.qcow2 \
 	opensuse;15.0;https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.0/images/openSUSE-Leap-15.0-OpenStack.x86_64-0.0.4-Buildlp150.12.96.qcow2 \
-	centos;7.0;https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1503.qcow2"
+	centos;7.0;https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1503.qcow2 \
+	coreos;1967.4.0;https://stable.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2"
