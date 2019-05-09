@@ -100,3 +100,11 @@ virtctl console debian9
 ## Example in docker
 
 Example: `docker pull tedezed/debian-container-disk:8.0`
+
+## Customizable use
+
+Edit the file build_variable with your OS images, personal Docker registry and execute the next command to compile:
+```
+source build_variable
+make build
+```
