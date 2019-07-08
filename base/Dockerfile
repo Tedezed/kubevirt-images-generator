@@ -11,7 +11,8 @@ ARG IMAGE_EXTENSION="img"
 
 ADD custom /mnt/custom
 RUN echo "Download: $IMAGE_URL FILE: $FILE_NAME" \
-	&& yum install -y findutils \
+	&& yum update --releasever 28 \
+	&& yum install -y findutils --releasever 28 \
 	&& curl -SL $IMAGE_URL -o /disk/$FILE_NAME
 
 RUN KEY_LOOP="true"; \

@@ -2,6 +2,7 @@
 
 ### Debian
 
+- [debian-container-disk:10.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags)
 - [debian-container-disk:9.0](https://hub.docker.com/r/tedezed/debian-container-disk)
 - [debian-container-disk:8.0](https://hub.docker.com/r/tedezed/debian-container-disk)
 - [debian-container-disk:testing](https://hub.docker.com/r/tedezed/debian-container-disk)

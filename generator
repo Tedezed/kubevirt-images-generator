@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -x
-
 for IMAGE in $LIST_IMAGES
 do
 	OS_NAME=$(echo $IMAGE | cut -d";" -f1)
@@ -20,6 +18,7 @@ do
 	#	curl -g -L $IMAGE_URL > custom/$FILE_NAME
 	#fi
 
+	echo "Build $OS_NAME:$OS_VERSION"
 	docker build -f base/Dockerfile -t $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION \
 		--build-arg OS_NAME="$OS_NAME" \
 		--build-arg OS_VERSION="$OS_VERSION" \
@@ -28,6 +27,7 @@ do
 		--build-arg IMAGE_NAME="$IMAGE_NAME" \
 		--build-arg IMAGE_EXTENSION="$IMAGE_EXTENSION" .
 
+	echo "Push $OS_NAME:$OS_VERSION"
 	docker push $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION
 
 	#rm -f custom/$FILE_NAME
