@@ -1,0 +1,46 @@
+# Debian 10.0 Cloud-init v18.3
+apiVersion: kubevirt.io/v1alpha3
+kind: VirtualMachine
+metadata:
+  name: debian
+spec:
+  running: false
+  template:
+    metadata:
+      labels: 
+        kubevirt.io/size: small
+        kubevirt.io/domain: debian
+    spec:
+      domain:
+        cpu:
+          cores: 2
+        devices:
+          disks:
+            - name: containervolume
+              disk:
+                bus: virtio
+            - name: cloudinitvolume
+              disk:
+                bus: virtio
+          interfaces:
+          - name: default
+            bridge: {}
+        resources:
+          requests:
+            memory: 2048M
+      networks:
+      - name: default
+        pod: {}
+      volumes:
+        - name: containervolume
+          containerDisk:
+            image: tedezed/debian-container-disk:10.0
+        - name: cloudinitvolume
+          cloudInitNoCloud:
+            userData: |-
+              #cloud-config
+              chpasswd:
+                list: |
+                  debian:debian
+                  root:toor
+                expire: False

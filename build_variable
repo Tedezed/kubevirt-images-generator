@@ -3,8 +3,8 @@ export NAME_REGISTRY="tedezed"
 export LIST_IMAGES="ubuntu;18.0;https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img \
 	ubuntu;16.0;https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img \
 	ubuntu;14.0;https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-disk1.img \
-	debian;10.0;https://gemmei.ftp.acc.umu.se/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2 \
-	debian;9.0;https://gemmei.ftp.acc.umu.se/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2 \
+	debian;10.0;https://cdimage.debian.org/cdimage/cloud/OpenStack/10.0.1-20190708/debian-10.0.1-20190708-openstack-amd64.qcow2 \
+	debian;9.0;https://cdimage.debian.org/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2 \
 	debian;8.0;https://cdimage.debian.org/cdimage/openstack/archive/8.11.0/debian-8.11.0-openstack-amd64.qcow2 \
 	debian;testing;https://cdimage.debian.org/cdimage/openstack/testing/debian-testing-openstack-amd64.qcow2 \
 	opensuse;15.0;https://download.opensuse.org/repositories/Cloud:/Images:/Leap_15.0/images/openSUSE-Leap-15.0-OpenStack.x86_64-0.0.4-Buildlp150.12.96.qcow2 \
