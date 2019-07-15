@@ -27,7 +27,7 @@ spec:
             bridge: {}
         resources:
           requests:
-            memory: 2048M
+            memory: 1024M
       networks:
       - name: default
         pod: {}
@@ -39,8 +39,7 @@ spec:
           cloudInitNoCloud:
             userData: |-
               #cloud-config
-              chpasswd:
-                list: |
-                  debian:debian
-                  root:toor
-                expire: False
+              bootcmd:
+                - echo cloud-init=disabled > /etc/cloud/cloud-init.disabled
+                - [ /bin/bash, -c, 'echo -e "demopass\ndemopass" | passwd root' ]
+                - reboot
