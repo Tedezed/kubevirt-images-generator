@@ -33,7 +33,7 @@ do
 	CONT_TIMEOUT=0
 	# Hack Docker-Hub slow image push
 	while [[ $CONT_TIMEOUT < 5 ]] && [[ $SUCCESS != 0 ]]; do
-		timeout 120 docker push $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION
+		timeout 300 docker push $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION
 		SUCCESS=$?
 		CONT_TIMEOUT=$((CONT_TIMEOUT + 1))
 		sleep 3
