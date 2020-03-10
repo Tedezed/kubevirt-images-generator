@@ -26,6 +26,7 @@ do
 		--build-arg FILE_NAME="$FILE_NAME" \
 		--build-arg IMAGE_NAME="$IMAGE_NAME" \
 		--build-arg IMAGE_EXTENSION="$IMAGE_EXTENSION" .
+	if [ $? != 0 ]; then exit 1; fi
 
 	echo "Push $OS_NAME:$OS_VERSION"
 	docker push $NAME_REGISTRY/$NAME_IMAGE:$OS_VERSION

@@ -1,4 +1,4 @@
-FROM kubevirt/container-disk-v1alpha
+FROM kubevirt/container-disk-v1alpha:v0.13.7
 
 LABEL maintainer="Juan Manuel Torres <juanmanuel.torres@aventurabinaria.es>"
 
@@ -10,10 +10,12 @@ ARG IMAGE_NAME="os_xxx"
 ARG IMAGE_EXTENSION="img"
 
 ADD custom /mnt/custom
-RUN echo "Download: $IMAGE_URL FILE: $FILE_NAME" \
-	&& yum update --releasever 28 \
-	&& yum install -y findutils --releasever 28 \
-	&& curl -SL $IMAGE_URL -o /disk/$FILE_NAME
+RUN echo "Download: $IMAGE_URL FILE: $FILE_NAME"; \
+	set -x \
+	&& yum update --releasever 28 -y \
+	&& yum install -y findutils --releasever 28
+
+RUN curl -fSL $IMAGE_URL -o /disk/$FILE_NAME ; if [ $? != 0 ]; then exit 1; fi 
 
 RUN KEY_LOOP="true"; \
 while [ $KEY_LOOP == "true" ]; do \
