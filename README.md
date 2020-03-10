@@ -2,8 +2,8 @@
 
 ### Debian
 
-- [debian-container-disk:10.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags) - [Example Debian 10.0](#create-vm-with-debian-10)
-- [debian-container-disk:9.0](https://hub.docker.com/r/tedezed/debian-container-disk) - [Example Debian 9.0](#examples-kubevirt)
+- [debian-container-disk:10.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags) - [Example yaml Debian 10.0](#create-vm-with-debian-10)
+- [debian-container-disk:9.0](https://hub.docker.com/r/tedezed/debian-container-disk) - [Example yaml Debian 9.0](#examples-kubevirt)
 - [debian-container-disk:8.0](https://hub.docker.com/r/tedezed/debian-container-disk)
 - [debian-container-disk:testing](https://hub.docker.com/r/tedezed/debian-container-disk)
 
