@@ -9,6 +9,7 @@
 
 ### Ubuntu
 
+- [ubuntu-container-disk:20.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
 - [ubuntu-container-disk:18.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
 - [ubuntu-container-disk:16.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
 - [ubuntu-container-disk:14.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk)
@@ -19,6 +20,7 @@
 
 ### Fedora
 
+- [fedora-container-disk:34](https://hub.docker.com/r/tedezed/fedora-container-disk)
 - [fedora-container-disk:30](https://hub.docker.com/r/tedezed/fedora-container-disk)
 - [fedora-container-disk:29](https://hub.docker.com/r/tedezed/fedora-container-disk)
 - [fedora-container-disk:28](https://hub.docker.com/r/tedezed/fedora-container-disk)
