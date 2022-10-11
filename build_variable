@@ -1,6 +1,7 @@
 export NAME_REGISTRY="tedezed"
 # Image: img, iso, qcow2, tar, gz, xz
-export LIST_IMAGES="ubuntu;20.0;https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img \
+export LIST_IMAGES="ubuntu;22.0;https://cloud-images.ubuntu.com/kinetic/current/kinetic-server-cloudimg-amd64.img \
+	ubuntu;20.0;https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img \
 	ubuntu;18.0;https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img \
 	ubuntu;16.0;https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img \
 	ubuntu;14.0;https://cloud-images.ubuntu.com/trusty/current/trusty-server-cloudimg-amd64-disk1.img \
@@ -12,6 +13,8 @@ export LIST_IMAGES="ubuntu;20.0;https://cloud-images.ubuntu.com/focal/current/fo
 	centos;7.0;https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1503.qcow2 \
 	coreos;1967.4.0;https://stable.release.core-os.net/amd64-usr/current/coreos_production_openstack_image.img.bz2 \
 	cirros;0.4.0;http://download.cirros-cloud.net/0.4.0/cirros-0.4.0-x86_64-disk.img \
+	fedora;36;https://ftp.cica.es/fedora/linux/releases/36/Cloud/x86_64/images/Fedora-Cloud-Base-36-1.5.x86_64.qcow2 \
+	fedora;35;https://ftp.cica.es/fedora/linux/releases/35/Cloud/x86_64/images/Fedora-Cloud-Base-35-1.2.x86_64.qcow2 \
 	fedora;34;https://ftp.cica.es/fedora/linux/releases/34/Cloud/x86_64/images/Fedora-Cloud-Base-34-1.2.x86_64.qcow2 \
 	fedora;30;https://ftp.cica.es/fedora/linux/releases/30/Cloud/x86_64/images/Fedora-Cloud-Base-30-1.2.x86_64.qcow2 \
 	fedora;29;https://archive.fedoraproject.org/pub/archive/fedora/linux/releases/29/Cloud/x86_64/images/Fedora-Cloud-Base-29-1.2.x86_64.qcow2 \

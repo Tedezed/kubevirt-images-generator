@@ -15,7 +15,7 @@ RUN echo "Download: $IMAGE_URL FILE: $FILE_NAME"; \
 	&& yum update --releasever 28 -y \
 	&& yum install -y findutils --releasever 28
 
-RUN curl -fSL $IMAGE_URL -o /disk/$FILE_NAME ; if [ $? != 0 ]; then exit 1; fi 
+RUN curl -kfSL $IMAGE_URL -o /disk/$FILE_NAME ; if [ $? != 0 ]; then exit 1; fi 
 
 RUN KEY_LOOP="true"; \
 while [ $KEY_LOOP == "true" ]; do \

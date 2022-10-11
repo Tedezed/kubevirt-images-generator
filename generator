@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 for IMAGE in $LIST_IMAGES
 do
 	OS_NAME=$(echo $IMAGE | cut -d";" -f1)
