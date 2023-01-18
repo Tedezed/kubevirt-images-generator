@@ -1,6 +1,7 @@
 export NAME_REGISTRY="tedezed"
 # Image: img, iso, qcow2, tar, gz, xz
-export LIST_IMAGES="ubuntu;22.0;https://cloud-images.ubuntu.com/kinetic/current/kinetic-server-cloudimg-amd64.img \
+export LIST_IMAGES="ubuntu;22.10;https://cloud-images.ubuntu.com/kinetic/current/kinetic-server-cloudimg-amd64.img \
+        ubuntu;22.0;https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img \
 	ubuntu;20.0;https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img \
 	ubuntu;18.0;https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img \
 	ubuntu;16.0;https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img \
