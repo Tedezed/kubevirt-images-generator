@@ -2,6 +2,8 @@
 
 ### Debian
 
+- [debian-container-disk:12.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags)
+- [debian-container-disk:11.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags)
 - [debian-container-disk:10.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags) - [Example yaml Debian 10.0](#create-vm-with-debian-10)
 - [debian-container-disk:9.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags) - [Example yaml Debian 9.0](#examples-kubevirt)
 - [debian-container-disk:8.0](https://hub.docker.com/r/tedezed/debian-container-disk/tags)
@@ -9,6 +11,8 @@
 
 ### Ubuntu
 
+- [ubuntu-container-disk:24.04](https://hub.docker.com/r/tedezed/ubuntu-container-disk/tags)
+- [ubuntu-container-disk:22.10](https://hub.docker.com/r/tedezed/ubuntu-container-disk/tags)
 - [ubuntu-container-disk:22.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk/tags)
 - [ubuntu-container-disk:20.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk/tags)
 - [ubuntu-container-disk:18.0](https://hub.docker.com/r/tedezed/ubuntu-container-disk/tags)
@@ -17,10 +21,14 @@
 
 ### CentOS
 
+- [centos-container-disk:10.0](https://hub.docker.com/r/tedezed/centos-container-disk/tags)
 - [centos-container-disk:7.0](https://hub.docker.com/r/tedezed/centos-container-disk/tags)
 
 ### Fedora
 
+- [fedora-container-disk:39](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
+- [fedora-container-disk:38](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
+- [fedora-container-disk:37](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
 - [fedora-container-disk:36](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
 - [fedora-container-disk:35](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
 - [fedora-container-disk:34](https://hub.docker.com/r/tedezed/fedora-container-disk/tags)
